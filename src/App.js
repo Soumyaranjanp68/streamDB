@@ -1,24 +1,39 @@
-import logo from './logo.svg';
+// import logo from './Components/Img.png';
+// import React,{useEffect,useState} from 'react';
 import './App.css';
+// import Navbar from './Components/Navbar.js';
+import {BrowserRouter,Routes,Route} from "react-router-dom";
+// import Home from './Components/Home.js';
+import Register from './Register.jsx';
+import Login from "./Login";
+import Nav from "./Navbar"
 
 function App() {
+  //  const [Movies, setMovies] = require([])
+
+  //  useEffect(() => {
+  //   const fetchData = async () => {
+  //     const result = await fetch("http://localhost:3001/movies")
+  //     const jsonResult = await result.json();
+  //     setMovies(jsonResult);
+  //   }
+  //   fetchData();
+  // }, []);
+
   return (
+  <BrowserRouter>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      < Nav/>
+      <Routes>
+        {/* <h2>MOVIES</h2>  */}
+        {/* <Route path ="/" element={<Home/>}></Route>
+         <Route path ="/movies" element={<Movies/>}></Route> */}
+        <Route path ="/register" element={<Register/>}></Route>
+        <Route path ="/login" element={<Login/>}></Route>
+        {/* <Route path ="/profile" element={<profile/>}></Route> */}
+      </Routes>
     </div>
+    </BrowserRouter>
   );
 }
 
