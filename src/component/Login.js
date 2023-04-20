@@ -26,7 +26,7 @@ export default function SignIn() {
     const [password, setPassword] = useState("");
     
     const LoginFunction= async function(){
-        await axios.post("http://localhost:3001/login",{
+        await axios.post("https://stream-db.onrender.com/login",{
         email,
         password,
     })

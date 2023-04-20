@@ -26,7 +26,7 @@ export default function SignUp() {
     const [phone, setPhone] = useState("");
    
     const RegisterFunction= async function(){
-        await axios.post("http://localhost:3001/register",{
+        await axios.post("https://stream-db.onrender.com/register",{
         email,
         password,
         name,

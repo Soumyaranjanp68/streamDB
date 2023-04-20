@@ -32,7 +32,7 @@ export default function Movies() {
     const token = localStorage.getItem("token");
     const movieFunction= async function(){
 
-        await axios.post('http://localhost:3001/movies', {title,
+        await axios.post('https://stream-db.onrender.com/movies', {title,
         genres,
         rating,
         description,

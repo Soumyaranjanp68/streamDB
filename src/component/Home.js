@@ -35,7 +35,7 @@ const Home =()=> {
 
   const fetchMovies = async () => {
     try {
-      const response = await axios.get(`http://localhost:3001/moviesList?title=${title}`,)
+      const response = await axios.get(`https://stream-db.onrender.com/moviesList?title=${title}`,)
       setMovies(response.data.data);
     //   Navigate('/');
       console.log(response.data);
@@ -56,7 +56,7 @@ const Home =()=> {
 //while creating movie following function is used-
   const getMovies = async () => {
     try {
-        const response = await axios.get('http://localhost:3001/moviesList',)
+        const response = await axios.get('https://stream-db.onrender.com/moviesList',)
         setMovies(response.data.data);
         console.log(response.data);
       } catch (error) {
