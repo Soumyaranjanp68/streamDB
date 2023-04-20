@@ -1,0 +1,51 @@
+/* img {
+    width: 15%;
+    background-color: #24252A;
+    object-fit: contain;
+  } */
+
+  .logo {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xx-large;
+    color: aqua;
+    margin-left: 0%;
+  }
+  
+  .navbar {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 1px 5px 5px #3f3f43;
+    background-color: #24252A;
+    align-items: center;
+  }
+  
+  .nav-menu {
+    display: flex;
+    margin-left: 70%;
+  }
+  
+  li {
+    list-style: none;
+    padding: 1px 15px;
+    color: white;;
+  }
+
+
+  .auth:hover{
+    color: #0088a9
+  }
+  
+  a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    /* text-transform: uppercase; */
+    transition: all 0.2s ease-in-out;
+  }
+  
+  a:hover {
+    color:#f3081b;
+ }
